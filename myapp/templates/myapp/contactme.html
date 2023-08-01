@@ -1,0 +1,55 @@
+{% extends 'myapp/base.html' %}
+{% block content %}
+<div class="container mt-5">
+  <div class="text-warning border-bottom mb-5"><h2>CONTACT US</h2></div>
+  <div class="row text-white mb-5">
+      <p class="mx-auto mb-5">Do you have any question? Please do no hesitate to contact. I will come back to you within a matter of hours to help</p>
+      <div class="col-sm-9 mb-5">
+          <form action="" method="POST">
+            {% csrf_token %}
+              <div class="form-row">
+                  <div class="form-group col-md-6">
+                      <label for="inputName">Your Name </label>
+                      <input name="name" type="text" class="form-control" id="inputName">
+                  </div>
+                  <div class="form-group col-md-6">
+                      <label for="inputEmail">Your Email </label>
+                      <input type="email" name="email" class="form-control" id="inputEmail" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="inputSubject">Your Subject </label>
+                      <input type="text" name="subj" class="form-control" id="inputSubject">
+                  </div>
+                  <div class= "mb-3">
+                      <label for="inputTextarea">Your Message </label>
+                      <textarea name="youmsg" class="form-control" id="inputTextarea" required></textarea>
+                  </div>
+                  <button class="btn btn-primary" type="submit">Send</button>
+              </div>
+          </form>
+      </div>
+      <div class="col-sm-3 text-center">
+          <ul class="list-unstyled">
+              <li>
+                  <i class="fa-solid fa-location-dot fa-2x i-color"></i>
+                  <p>Samba, Jammu and Kashmir, India</p>
+              </li>
+              <li>
+                  <i class="fas fa-phone mt-4 fa-2x i-color"></i>
+                      <p> +91 9103495990</p>
+              </li>
+              <li>
+              <i class="fas fa-envelope mt-4 fa-2x i-color"></i>
+              <p>Khajuriadivyansh@gmail.com</p>
+              </li>
+          </ul>
+      </div>
+  </div>
+</div>
+<div class="text-center">
+    <a href="" target="_blank"><i class="fab fa-twitter i-color mr-3"></i></a>
+    <a href="" target="_blank"><i class="fab fa-facebook-f i-color mr-3"></i></a>
+    <a href="" target="_blank"><i class="fab fa-instagram i-color mr-3"></i></a>
+    <a href="" target="_blank"><i class="fab fa-dribbble i-color"></i></a>
+</div>
+{% endblock content %}

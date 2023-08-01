@@ -1,0 +1,50 @@
+{% extends 'myapp/base.html' %} {% load static %}
+<title>{% block title %} About Me {% endblock title %}</title>
+{% block content %}
+<div class="container mt-3">
+  <!-- PASTE EVERYTHING INSIDE THIS DIV CONTAINER -->
+  <div class="text-warning mb-5 mt-5 border-bottom"><h2>Education</h2></div>
+  <div class="row">
+    <!-- CARD 1 -->
+    <div class="col-sm-6 mt-2">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">10th Class</h5>
+          <p class="card-text">Score:93.6%</p>
+          <a href="#" class="btn btn-primary">Verified</a>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 2 -->
+    <div class="col-sm-6 mt-2">
+      <div class="card bg-light">
+        <div class="card-body">
+          <h5 class="card-title">12th Class</h5>
+          <p class="card-text">Score:90%</p>
+          <a href="#" class="btn btn-primary">Verified</a>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 3 -->
+    <div class="col-sm-6 mt-2">
+      <div class="card bg-light">
+        <div class="card-body">
+          <h5 class="card-title">Graduation</h5>
+          <p class="card-text">Score:?</p>
+          <a href="#" class="btn btn-primary">Pending...</a>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 4 -->
+    <div class="col-sm-6 mt-2">
+      <div class="card bg-light">
+        <div class="card-body">
+          <h5 class="card-title">Post Graduation</h5>
+          <p class="card-text">Score:?</p>
+          <a href="#" class="btn btn-primary">Pending...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

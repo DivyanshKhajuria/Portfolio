@@ -1,0 +1,15 @@
+{% load static %}
+<div class="border-warning border-right h-100">
+    <div class="text-center mt-3">
+        <img src="{% static 'myapp/images/pic.JPG' %}" alt="profile pic" class="img-fluid rounded-circle mt-r=5" width="100px" height="100px"/>
+        <h5 class="text-white mt-3 st-font"> Divyansh Khajuria</h5>
+        <hr class="border-bottom">
+    </div>
+    
+        <nav class="nav flex-column text-center">
+            <a href="{% url 'about' %}" class="nav-link {{about}}">About</a>
+            <a href="{% url 'education' %}" class="nav-link {{education}}">Education</a>
+            <a href="{% url 'skill' %}" class="nav-link {{skills}}">Skill</a>
+            <a href="{% url 'contact' %}" class="nav-link {{contact}}">Contact</a>
+        </nav>
+</div>
